@@ -1,5 +1,5 @@
 # Assignment 1.1 - Breaking the web
-For this assignment I disabled JavaScript and localStorage in my browser, to see how big their influence is on our experience of the web. I will discuss what these two features are meant to do, how to disable them in the browser, and what kind of issues arises if you disable them. 
+For this assignment I disabled JavaScript and LocalStorage in my browser, to see how big their influence is on our experience of the web. I will discuss what these two features are meant to do, how to disable them in the browser, and what kind of issues arise if you disable them.
 
 ## Javascript
 JavaScript is a commonly used scripting language to make webpages interactive.
@@ -24,14 +24,21 @@ What seems to be the largest issue on websites, that are not that big, is of cou
 
 The website awwwards.com hand outs awards to other websites on how good there site is. The navigation on their own site is not usable and none of the images are visible. 
 
+
 ![The website of awwwards.com without JS](https://github.com/dylanvans/browser-technology/blob/master/assignment1.1/img/awwwards.png)
 
 The 'Site of the Day'  on march 7 according to awwwards.com was voltafootwear.com. Without any JavaScript this website gives us a blank page(With JavaScript enabled, this website is beautiful).
 
 On soundcloud.com we only get to see a warning that our JavaScript is disabled and we can not do anything with the site.
+
 ![The website of soundcloud.com without JS](https://github.com/dylanvans/browser-technology/blob/master/assignment1.1/img/soundcloud.png)
 
 
 ## LocalStorage
- 
-### Why disable it?
+Using LocalStorage you can store application data in the browser of the user. The difference between LocalStorage and SessionStorage is that LocalStorage has no expiration time. LocalStorage is mostly used to store the state the application is in, so when a user returns to the page you can serve the right state of the app.
+
+### How to test it?
+Go into a private mode of a browser. Like the incognito mode of Chrome or the Private Browsing in Safari. 
+
+### What happens when you disable it?
+When there is no LocalStorage available, the state of the page you are visiting is not stored. Also with every login you need to type in your username every time you visit, instead of the username automatically filled in using LocalStorage.
