@@ -24,12 +24,12 @@ What seems to be the largest issue on websites, that are not that big, is of cou
 
 The website awwwards.com hand outs awards to other websites on how good there site is. The navigation on their own site is not usable and none of the images are visible. 
 
-![The website of awwwards.com without JS](https://github.com/dylanvans/browser-technology/tree/master/assignment1.1/img/awwwards.png)
+![The website of awwwards.com without JS](https://github.com/dylanvans/browser-technology/blob/master/assignment1.1/img/awwwards.png)
 
 The 'Site of the Day'  on march 7 according to awwwards.com was voltafootwear.com. Without any JavaScript this website gives us a blank page(With JavaScript enabled, this website is beautiful).
 
 On soundcloud.com we only get to see a warning that our JavaScript is disabled and we can not do anything with the site.
-![The website of soundcloud.com without JS](https://github.com/dylanvans/browser-technology/tree/master/assignment1.1/img/soundcloud.png)
+![The website of soundcloud.com without JS](https://github.com/dylanvans/browser-technology/blob/master/assignment1.1/img/soundcloud.png)
 
 
 ## LocalStorage
