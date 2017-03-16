@@ -5,24 +5,24 @@ For this assignment I disabled JavaScript and LocalStorage in my browser, to see
 JavaScript is a commonly used scripting language to make webpages interactive.
 
 ### Why disable it?
-Almost nobody would intentionally disable their Javascript in their browser. But there are circumstances where the JavaScript of the user is blocked or just doesn't work. There could be adblockers, plugins or errors that prevents your script from running. That's why it is a useful exercise to research what happens when you disable it, although it is an extreme condition.
+Hardly anybody would intentionally disable their Javascript in their browser. But there are circumstances where the JavaScript of the user is blocked or just doesn't work. There could be adblockers, plugins or errors that prevent your script from running. That's why it is a useful exercise to research what happens when you disable it, although it is an extreme condition.
 
 ### How to disable it?
 I used Chrome when researching this and it's fairly easy to disable JavaScript:
 
-- Go to **setting**
+- Go to **Setting**
 - Click **Show advanced settings**
-- Beneath the Privacy section, click on **Content setting**
+- Beneath the Privacy section, click on **Content settings**
 - And select **Do not allow any site to run JavaScript**
 
-### How is the web without JavaScript?
-I tested a couple of websites to see if the main goal of the website can still be achieved without JavaScript.
+### What is the web like without JavaScript?
+I tested a couple of websites to see if the main goal of the website could still be achieved without JavaScript.
 
-Websites with mainly text content were overall still usable. I could easily read any article of theguardian.com and medium.com without any trouble. And surprisingly it is difficult to see any differences between reddit.com with JavaScript and reddit.com without it.
+Overall, websites with mainly text content were still usable. I could easily read any article of theguardian.com and medium.com. Surprisingly, it is difficult to see any differences between reddit.com with JavaScript and the reddit.com without it.
 
-What seems to be the largest issue on websites, that are not that big, is of course the interaction with the webpage. On many sites the navigation is hidden an can normally be activated by clicking on an icon. Without JavaScript this is often not possible and that makes navigating the webpage impossible.
+What seems to be the largest issue on websites, that are not that big, is of course the interaction with the webpage. On many sites the navigation is hidden and normally it can be activated by clicking an icon. Without JavaScript this is often not possible and that makes navigating the webpage impossible.
 
-The website awwwards.com hand outs awards to other websites on how good there site is. The navigation on their own site is not usable and none of the images are visible. 
+The website awwwards.com hands out awards to other websites because of how good their site is, but the navigation on their own site is not usable and none of the images are visible without the use of Javascript.
 
 
 ![The website of awwwards.com without JS](https://github.com/dylanvans/browser-technology/blob/master/assignment1.1/img/awwwards.png)
