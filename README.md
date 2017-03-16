@@ -1,1 +1,3 @@
-# browser-technology
+# Browser Technology
+
+- Assignment 1.1
