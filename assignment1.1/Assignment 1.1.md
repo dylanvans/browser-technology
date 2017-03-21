@@ -10,7 +10,7 @@ Hardly anybody would intentionally disable their Javascript in their browser. Bu
 ### How to disable it?
 I used Chrome when researching this and it's fairly easy to disable JavaScript:
 
-- Go to **Setting**
+- Go to **Settings**
 - Click **Show advanced settings**
 - Beneath the Privacy section, click on **Content settings**
 - And select **Do not allow any site to run JavaScript**
