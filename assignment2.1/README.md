@@ -58,6 +58,7 @@ Then we push every options value to an array. And with every change in the input
 ### The Fallback
 
 ### Sources
+- https://googlechrome.github.io/samples/css-intrinsic-sizing/
 
 ## JS Feature 1
 ### The Feature
