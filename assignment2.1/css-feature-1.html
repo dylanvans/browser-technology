@@ -18,9 +18,9 @@
 	<label for="number-input">Number between 1 and 100</label>
 	<script>
 		var inputEl = document.querySelector('input[type=number]:out-of-range');
-		if(document.querySelector('input[type=number]:out-of-range') || document.querySelector('input[type=number]:in-range')){
+		if(!document.querySelector('input[type=number]:out-of-range') || document.querySelector('input[type=number]:in-range')){
 			console.log(getComputedStyle(inputEl).getPropertyValue('border'))
-			document.body.style = 'blue';
+			document.body.style.background = 'blue';
 		}
 
 	</script>
