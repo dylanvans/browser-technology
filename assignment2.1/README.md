@@ -26,6 +26,8 @@ if ('options' in document.createElement('datalist')) {
 
 Then we push every options value to an array. And with every change in the input element we check if the array has a value that contains the input value. If so, we add this value to the html.
 
+[demo](https://dylanvans.github.io/browser-technology/assignment2.1/html-feature-1.html)
+
 ### Sources
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 - http://caniuse.com/#search=datalist
@@ -55,6 +57,8 @@ if (!('open' in document.createElement('details'))) {
 
 When the browser doesn't support `<details>` we add a click event to `<summary>` which will toggle a hide-class on the paragraph beneath it. Also, we add a class to the details element who styles it like a details element.
 
+[demo](https://dylanvans.github.io/browser-technology/assignment2.1/html-feature-2.html)
+
 ### Sources
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 - http://caniuse.com/#search=details
@@ -67,6 +71,8 @@ With the `:in-range` and `:out-of-range` pseudo-classes we can style our inputs 
 ![screenshot of http://caniuse.com/#search=range](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/range.png)
 ### The Fallback
 With Javascript we provide a fallback if the pseudo-classes aren't supported. On every change in the input there is a check if the input value is in range of the min and max attributes. If so, a class is added and the element will be styled.
+
+[demo](https://dylanvans.github.io/browser-technology/assignment2.1/css-feature-1.html)
 
 ### Sources
 - https://developer.mozilla.org/nl/docs/Web/CSS/:in-range
@@ -84,6 +90,9 @@ I found it hard to exactly recreate the intrinsic values of the width property, 
 ![screenshot of intrinsic sizing](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/chrome-intrinsic.png)
 **IE9:**
 ![screenshot of fallback](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/ie9-intrinsic.png)
+
+[demo](https://dylanvans.github.io/browser-technology/assignment2.1/css-feature-2.html)
+
 ### Sources
 - http://caniuse.com/#search=intrinsic
 - https://googlechrome.github.io/samples/css-intrinsic-sizing/
