@@ -50,14 +50,20 @@ Then we push every options value to an array. And with every change in the input
 
 ### Sources
 
-## CSS Feature 2
+## CSS Feature 2 - Intrinsic Sizing
 ### The Feature
+This CSS feature allows you to size your html elements with content-based proportions. For example, if you want your element to be as small as the content can be without breaking it, you can set the width to `min-content`.
 
 ### Browser Support
-
+![screenshot of http://caniuse.com/#search=intrinsic](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/sizing.png)
 ### The Fallback
-
+I found it hard to exactly recreate the intrinsic values of the width property, especially the min-content value. The closest I came was using `display: inline-block` and `width: auto` before `width: min-content`. I tested it on Chrome(does support) and IE9(doesn't support) and there is a small difference between the two:
+**Chrome:**
+![screenshot of intrinsic sizing](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/chrome-intrinsic.png)
+**IE9:**
+![screenshot of fallback](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/ie9-intrinsic.png)
 ### Sources
+- http://caniuse.com/#search=intrinsic
 - https://googlechrome.github.io/samples/css-intrinsic-sizing/
 
 ## JS Feature 1
