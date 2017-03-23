@@ -32,15 +32,17 @@ Then we push every options value to an array. And with every change in the input
 - http://diveintohtml5.info/everything.html#datalist
 - https://stackoverflow.com/questions/7048102/check-if-html-element-is-supported
 
-## HTML Feature 2
+## HTML Feature 2 - `<details>`
 ### The Feature
 
 ### Browser Support
-
+![screenshot of http://caniuse.com/#search=details](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/details.png)
 ### The Fallback
 
 ### Sources
-
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+- http://caniuse.com/#search=details
+- http://diveintohtml5.info/everything.html#datalist
 ## CSS Feature 1
 ### The Feature
 
