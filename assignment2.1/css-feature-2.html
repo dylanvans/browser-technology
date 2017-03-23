@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 2.1 - CSS feature 2</title>
+	<style>
+		.container {
+			padding: 1em;
+			border: 2px solid #313131;
+		}
+
+		.container div {
+			margin-bottom: .5em;
+			padding: 1em;
+			border: 2px solid #313131;
+		}
+		.min-content {
+			width: min-content;
+		}
+
+		.max-content {
+			width: max-content;
+		}
+
+		.fit-content {
+			width: fit-content;
+		}
+
+		.fill-available {
+			width: -webkit-fill-available;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Intrinsic Sizing</h1>
+	<div class="container">
+		<div>This sentence has the default styling</div>
+		<div class="min-content">This sentence has a width of min-content</div>
+		<div class="max-content">This sentence has a width of max-content</div>
+		<div class="fit-content">This sentence has a width of fit-content</div>
+		<div class="fill-available">This sentence has a width of fill-available</div>
+	</div>
+</body>
+</html>

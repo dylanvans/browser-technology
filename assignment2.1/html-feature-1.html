@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 2.1 - Html feature 1</title>
+</head>
+<body>
+	<h1>Datalist</h1>
+	<label for="input-example">Input type:</label>
+	<input list="input-type" id="input-example">
+
+	<datalist id="input-type">
+		<option value="button">
+		<option value="checkbox">
+		<option value="color">
+		<option value="date">
+		<option value="datetime">
+		<option value="email">
+		<option value="file">
+		<option value="hidden">
+		<option value="image">
+		<option value="month">
+		<option value="number">
+		<option value="password">
+		<option value="radio">
+		<option value="range">
+		<option value="text">
+	</datalist>
+</body>
+	<script>
+		if (!('options' in document.createElement('datalist'))) {
+			var optionEl = document.querySelectorAll('option');
+			var inputEl = document.querySelector('input[list=input-type]');
+			inputEl.insertAdjacentHTML('afterend', '<div class="alt-datalist"></div>')
+			var altDatalistEl = document.querySelector('.alt-datalist');
+
+			var datalistValueArray = [];
+
+			optionEl.forEach(function(el){
+				datalistValueArray.push(el.value)
+			});
+			
+			inputEl.addEventListener('input', function() {
+				altDatalistEl.innerHTML = ' ';
+
+				datalistValueArray.forEach(function(optionValue){
+					if(inputEl.value) {
+						if(!optionValue.indexOf(inputEl.value)) {
+							altDatalistEl.insertAdjacentHTML('afterbegin', '<div>' + optionValue + '</div>')
+						}
+					}
+				})
+			})
+		}
+	</script>
+</html>
