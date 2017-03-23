@@ -4,25 +4,33 @@
 	<meta charset="UTF-8">
 	<title>Assignment 2.1 - CSS feature 1</title>
 	<style>
-		input[type="number"]:in-range {
+		input[type="number"]:in-range, .value-in-range {
 			border: 2px solid #9bf370;
 		}
-		input[type="number"]:out-of-range {
+
+		input[type="number"]:out-of-range, .value-out-of-range {
 			border: 2px solid #f37070;
 		}
 	</style>
 </head>
 <body>
 	<h1>:in-range and :out-of-range</h1>
-	<input id="number-input" type="number" min="1" max="100" value="0">
+	<input id="number-input" type="number" min="1" max="100">
 	<label for="number-input">Number between 1 and 100</label>
 	<script>
-		var inputEl = document.querySelector('input[type=number]:out-of-range');
-		if(!document.querySelector('input[type=number]:out-of-range') || document.querySelector('input[type=number]:in-range')){
-			console.log(getComputedStyle(inputEl).getPropertyValue('border'))
-			document.body.style.background = 'blue';
-		}
+		var inputEl = document.querySelectorAll('input[type=number]');
 
+		inputEl.forEach(function(el) {
+			el.addEventListener('input', function() {
+				if(el.value > el.getAttribute('min') && el.value < el.getAttribute('max')) {
+					el.classList.add('value-in-range');
+					el.classList.remove('value-out-of-range');
+				} else {
+					el.classList.remove('value-in-range');
+					el.classList.add('value-out-of-range');
+				}
+			});
+		});
 	</script>
 </body>
 </html>
