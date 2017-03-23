@@ -34,7 +34,7 @@ Then we push every options value to an array. And with every change in the input
 
 ## HTML Feature 2 - `<details>`
 ### The Feature
-The `<details>` element in combination with the `<summery>` element makes it possible to hide extra content when needed.
+The `<details>` element in combination with the `<summary>` element makes it possible to hide extra content when needed.
 
 ``` html
 <details>
@@ -46,7 +46,7 @@ The `<details>` element in combination with the `<summery>` element makes it pos
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=details](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/details.png)
 ### The Fallback
-We can detect if a browser supports datalist with: 
+We can detect if a browser supports details with: 
 ``` javascript
 if (!('open' in document.createElement('details'))) {
     // Fallback comes here
