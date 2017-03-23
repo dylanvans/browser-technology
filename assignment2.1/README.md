@@ -62,10 +62,11 @@ When the browser doesn't support `<details>` we add a click event to `<summary>`
 
 ## CSS Feature 1 - :in-range & :out-of-range
 ### The Feature
-
+With the `:in-range` and `:out-of-range` pseudo-classes we can style our inputs depending on the state the input is in. If the value of the input is between the values of the 'min' and 'max' attributes, the element can be styled using `:in-range`.
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=range](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/range.png)
 ### The Fallback
+With Javascript we provide a fallback if the pseudo-classes aren't supported. On every change in the input there is a check if the input value is in range of the min and max attributes. If so, a class is added and the element will be styled.
 
 ### Sources
 - https://developer.mozilla.org/nl/docs/Web/CSS/:in-range
