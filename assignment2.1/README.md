@@ -34,15 +34,32 @@ Then we push every options value to an array. And with every change in the input
 
 ## HTML Feature 2 - `<details>`
 ### The Feature
+The `<details>` element in combination with the `<summery>` element makes it possible to hide extra content when needed.
+
+``` html
+<details>
+  <summary>This is visible</summary>
+  <p>This is visible when clicked on summary</p>
+</details>
+```
 
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=details](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/details.png)
 ### The Fallback
+We can detect if a browser supports datalist with: 
+``` javascript
+if (!('open' in document.createElement('details'))) {
+    // Fallback comes here
+}
+```
+
+When the browser doesn't support `<details>` we add a click event to `<summary>` which will toggle a hide-class on the paragraph beneath it. Also, we add a class to the details element who styles it like a details element.
 
 ### Sources
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 - http://caniuse.com/#search=details
 - http://diveintohtml5.info/everything.html#datalist
+
 ## CSS Feature 1
 ### The Feature
 
