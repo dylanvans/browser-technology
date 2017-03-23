@@ -60,14 +60,16 @@ When the browser doesn't support `<details>` we add a click event to `<summary>`
 - http://caniuse.com/#search=details
 - http://diveintohtml5.info/everything.html#datalist
 
-## CSS Feature 1
+## CSS Feature 1 - :in-range & :out-of-range
 ### The Feature
 
 ### Browser Support
-
+![screenshot of http://caniuse.com/#search=range](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/range.png)
 ### The Fallback
 
 ### Sources
+- https://developer.mozilla.org/nl/docs/Web/CSS/:in-range
+- http://caniuse.com/#search=range
 
 ## CSS Feature 2 - Intrinsic Sizing
 ### The Feature
