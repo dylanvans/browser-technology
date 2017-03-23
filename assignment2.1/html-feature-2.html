@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Assignment 2.1 - Html feature 2</title>
 	<style>
+		.details-fallback:before {
+			content: '▶';
+			position: absolute;
+		}
+
 		.details-hidden {
 			display: none;
 		}
@@ -19,10 +24,21 @@
 	<script>
 		if (!('open' in document.createElement('details'))) {
     		var detailsEl = document.querySelector('details');
+
+    		detailsEl.classList.add('details-fallback');
+
     		var summaryEl = detailsEl.querySelector('summary');
     		var extraEl = detailsEl.querySelector('p');
 
-    		extraEl.className += " details-hidden";
+    		extraEl.classList.add('details-hidden');
+
+			summaryEl.addEventListener("click", function(){
+				if(extraEl.classList.contains('details-hidden')){
+					extraEl.classList.remove('details-hidden');
+				} else {
+					extraEl.classList.add('details-hidden');
+				}
+			});
   		}
 	</script>
 </body>
