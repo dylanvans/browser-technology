@@ -25,7 +25,7 @@ if ('options' in document.createElement('datalist')) {
 }
 ```
 
-Then we push every options value to an array. And with every change in the input element we check if the array has a value that contains the input value. If so, we add this value to the html.
+Then we push every option's value to an array. And with every change in the input element we check if the array has a value that contains the input value. If so, we add this value to the html.
 
 [demo](https://dylanvans.github.io/browser-technology/assignment2.1/html-feature-1.html)
 
@@ -103,11 +103,29 @@ I found it hard to exactly recreate the intrinsic values of the width property, 
 
 ## JS Feature 1 - Geolocation
 ### The Feature
+With the geolocation API we can track the user's location and use it in our app. The user has to give permission before the API can run, also old browsers like IE8 don't support this feature. That's why it is important we provide a fallback to the user.
 
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=geolocation](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/geolocation.png)
 
 ### The Fallback
+First we check if the browser supports geolocation with:
+``` javascript
+if("geolocation" in navigator) {
+	// get location
+} else {
+	// Show fallback form
+}
+```
+
+Then we provide a fallback if the user denied our request to track them with an error function:
+``` javascript
+function (error) { 
+	if (error.code == error.PERMISSION_DENIED) {
+		// Show fallback form
+	}
+};
+```
 
 ### Sources
 - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation

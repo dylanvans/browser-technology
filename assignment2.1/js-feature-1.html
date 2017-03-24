@@ -25,8 +25,8 @@
 
 		if("geolocation" in navigator) {
 			navigator.geolocation.watchPosition(function(location) {
-				document.querySelector('.output-latitude').innerHTML += location.coords.latitude;
-				document.querySelector('.output-longitude').innerHTML += location.coords.longitude;
+				document.querySelector('.output-latitude').innerHTML = location.coords.latitude;
+				document.querySelector('.output-longitude').innerHTML = location.coords.longitude;
 			},
 			function (error) { 
 				if (error.code == error.PERMISSION_DENIED) {
