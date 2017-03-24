@@ -16,6 +16,7 @@ The HTML element `<datalist>` contains options for an `<input>` element. Datalis
 
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=datalist](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/datalist.png)
+
 ### The Fallback
 We can detect if a browser supports datalist with: 
 ``` javascript
@@ -47,6 +48,7 @@ The `<details>` element in combination with the `<summary>` element makes it pos
 
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=details](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/details.png)
+
 ### The Fallback
 We can detect if a browser supports details with: 
 ``` javascript
@@ -69,6 +71,7 @@ When the browser doesn't support `<details>` we add a click event to `<summary>`
 With the `:in-range` and `:out-of-range` pseudo-classes we can style our inputs depending on the state the input is in. If the value of the input is between the values of the 'min' and 'max' attributes, the element can be styled using `:in-range`.
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=range](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/range.png)
+
 ### The Fallback
 With Javascript we provide a fallback if the pseudo-classes aren't supported. On every change in the input there is a check if the input value is in range of the min and max attributes. If so, a class is added and the element will be styled.
 
@@ -84,6 +87,7 @@ This CSS feature allows you to size your html elements with content-based propor
 
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=intrinsic](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/sizing.png)
+
 ### The Fallback
 I found it hard to exactly recreate the intrinsic values of the width property, especially the min-content value. The closest I came was using `display: inline-block` and `width: auto` before `width: min-content`. I tested it on Chrome(does support) and IE9(doesn't support) and there is a small difference between the two:
 **Chrome:**
@@ -97,10 +101,11 @@ I found it hard to exactly recreate the intrinsic values of the width property, 
 - http://caniuse.com/#search=intrinsic
 - https://googlechrome.github.io/samples/css-intrinsic-sizing/
 
-## JS Feature 1
+## JS Feature 1 - Geolocation
 ### The Feature
 
 ### Browser Support
+![screenshot of http://caniuse.com/#search=geolocation](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/geolocation.png)
 
 ### The Fallback
 

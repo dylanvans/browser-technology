@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 2.1 - JS feature 1</title>
+	<style>
+		nav {
+			left: 0;
+			top: 0;
+			height: 100%;
+			color: white;
+			position: absolute;
+			width: 300px;
+			padding: 1em;
+			background-color: #222222;
+			transform: translate(-100%, 0);
+			transition: all .3s ease-in-out;
+		}
+
+		nav:target, .active-menu {
+			transform: translate(0, 0);
+		}
+
+		button.open-btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin: 2em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Slide menu css Fallback</h1>
+	<nav id="nav">
+		<ul>
+			<li>Home</li>
+			<li>Not-home</li>
+			<li>Detail</li>
+			<li>List</li>
+		</ul>
+		<button class="close-btn"><a href="#">Sluit menu</a></button>
+	</nav>
+	<button class="open-btn"><a href="#nav">Open menu</a></button>
+	<script>
+
+	</script>
+</body>
+</html>

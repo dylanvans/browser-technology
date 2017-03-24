@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 2.1 - JS feature 1</title>
+	<style>
+		.hide-form {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Geolocation</h1>
+	<form class="location-form hide-form">
+		<label for="locatie">Location</label>
+		<input id="locatie" type="text" placeholder="What is your location?" />
+		<button>Send</button>
+	</form>
+
+	<p>Latitude <span class="output-latitude"></span></p>
+	<p>Longitude<span class="output-longitude"></span></p>
+
+	<script>
+		if(!navigator.geolocation) {
+			document.querySelector('.location-form').classList.remove('hide-form');
+		} else {
+			navigator.geolocation.getCurrentPosition(function(location) {
+				document.querySelector('.output-latitude').innerHTML += location.coords.latitude;
+				document.querySelector('.output-longitude').innerHTML += location.coords.longitude;
+			});
+		}
+	</script>
+
+</body>
+</html>
