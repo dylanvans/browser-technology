@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 2.1 - JS feature 1</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	<h1>Notifications</h1>
+	<button class="notification-btn">Get notification</button>
+	<script>
+		document.querySelector('.notification-btn').addEventListener('click', function() {
+			if(!("Notification" in window)) {
+				alert('No support for browser notifications')
+			} else if(Notification.permission === "granted") {
+				var notification = new Notification('Already granted', {
+							icon: '👍',
+							body: "You already gave us permission to show you this notification",
+						});
+			} else if(Notification.permission !== "denied") {
+				Notification.requestPermission(function(permission) {
+					if(permission === "granted") {
+						var notification = new Notification('Just granted', {
+							icon: '👍',
+							body: "You just gave us permission to show you this notification",
+						});
+					}
+				});
+			}
+		})
+	</script>
+</body>
+</html>
