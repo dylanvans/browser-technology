@@ -30,11 +30,11 @@
 			},
 			function (error) { 
 				if (error.code == error.PERMISSION_DENIED) {
-					locationFormEl.classList.remove('hide-form');
+					locationFormEl.className = 'location-form';
 				}
 			});
 		} else {
-			locationFormEl.classList.remove('hide-form');
+			locationFormEl.className = 'location-form';
 		}
 		
 	</script>
