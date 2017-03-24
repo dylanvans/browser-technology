@@ -127,6 +127,8 @@ function (error) {
 };
 ```
 
+[demo](https://dylanvans.github.io/browser-technology/assignment2.1/js-feature-1.html)
+
 ### Sources
 - https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
 - http://caniuse.com/#search=geolocation
@@ -134,11 +136,29 @@ function (error) {
 
 ## JS Feature 2 - Notifications
 ### The Feature
+The Notifications API can be used to send users browser notifications when something happens on their website. The user first needs to give the website permission to send notifications. If denied, the Notifications API can not be activated.
 
 ### Browser Support
 ![screenshot of http://caniuse.com/#search=notifications](https://github.com/dylanvans/browser-technology/blob/master/assignment2.1/readme-img/notifications.png)
 
 ### The Fallback
+We first check if the Notifications API is supported:
+``` javascript
+if(!("Notification" in window)) {
+	alert('No support for browser notifications')
+}
+```
+
+Then, if there's no permission for the API yet we request permission. If the permission is granted we can send our notification:
+``` javascript
+Notification.requestPermission(function(permission) {
+	if(permission === "granted") {
+		var notification = new Notification('Permission has been granted');
+	}
+})
+```
+
+[demo](https://dylanvans.github.io/browser-technology/assignment2.1/js-feature-2.html)
 
 ### Sources
 - https://developer.mozilla.org/nl/docs/Web/API/notification
