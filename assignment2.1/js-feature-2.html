@@ -16,14 +16,14 @@
 				alert('No support for browser notifications')
 			} else if(Notification.permission === "granted") {
 				var notification = new Notification('Already granted', {
-							icon: 'http://gph.is/1Vnjkpg',
+							icon: 'https://giphy.com/gifs/monkey-dTVg9EKN6ZfJ6',
 							body: "You already gave us permission to show you this notification",
 						});
 			} else if(Notification.permission !== "denied") {
 				Notification.requestPermission(function(permission) {
 					if(permission === "granted") {
 						var notification = new Notification('Just granted', {
-							icon: 'http://gph.is/1Vnjkpg',
+							icon: 'https://giphy.com/gifs/monkey-dTVg9EKN6ZfJ6',
 							body: "You just gave us permission to show you this notification",
 						});
 					}
