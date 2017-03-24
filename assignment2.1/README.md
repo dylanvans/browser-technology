@@ -110,7 +110,9 @@ I found it hard to exactly recreate the intrinsic values of the width property, 
 ### The Fallback
 
 ### Sources
-
+- https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
+- http://caniuse.com/#search=geolocation
+- https://stackoverflow.com/questions/6092400/is-there-a-way-to-check-if-geolocation-has-been-declined-with-javascript
 ## JS Feature 2
 ### The Feature
 

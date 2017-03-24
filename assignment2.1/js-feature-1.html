@@ -21,14 +21,22 @@
 	<p>Longitude<span class="output-longitude"></span></p>
 
 	<script>
-		if(!navigator.geolocation) {
-			document.querySelector('.location-form').classList.remove('hide-form');
-		} else {
-			navigator.geolocation.getCurrentPosition(function(location) {
+		var locationFormEl = document.querySelector('.location-form');
+
+		if("geolocation" in navigator) {
+			navigator.geolocation.watchPosition(function(location) {
 				document.querySelector('.output-latitude').innerHTML += location.coords.latitude;
 				document.querySelector('.output-longitude').innerHTML += location.coords.longitude;
+			},
+			function (error) { 
+				if (error.code == error.PERMISSION_DENIED) {
+					locationFormEl.classList.remove('hide-form');
+				}
 			});
+		} else {
+			locationFormEl.classList.remove('hide-form');
 		}
+		
 	</script>
 
 </body>
