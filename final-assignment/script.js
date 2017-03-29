@@ -1,7 +1,7 @@
 (function () {
-	var searchInputEl = document.getElementbyClassName('.search-input');
-	var contactEl = document.getElementsbyClassName('.contact-item');
-	var mainContactEl = document.getElementsbyClassName('.contact-main-info');
+	var searchInputEl = document.getElementsByClassName('search-input')[0];
+	var contactEl = document.getElementsByClassName('contact-item');
+	var mainContactEl = document.getElementsByClassName('contact-main-info');
 
 	for (var i = 0; i < mainContactEl.length; i++) {
 		mainContactEl[i].addEventListener('click', toggleAccordion);
@@ -13,7 +13,7 @@
 		var filterValue = searchInputEl.value.toUpperCase();
 
 	    for (i = 0; i < contactEl.length; i++) {
-	        var name = contactEl[i].getElementbyClassName('.contact-name');
+	        var name = contactEl[i].getElementsByClassName('contact-name')[0];
 	        if (name.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
 	            contactEl[i].style.display = '';
 	        } else {
