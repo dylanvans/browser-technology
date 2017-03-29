@@ -3,11 +3,22 @@
 	var contactEl = document.getElementsByClassName('contact-item');
 	var mainContactEl = document.getElementsByClassName('contact-main-info');
 
-	for (var i = 0; i < mainContactEl.length; i++) {
-		mainContactEl[i].addEventListener('click', toggleAccordion);
+
+	if (document.addEventListener) {
+	    for (var i = 0; i < mainContactEl.length; i++) {
+			mainContactEl[i].addEventListener('click', toggleAccordion);
+		}
+
+		searchInputEl.addEventListener('input', searchContacts);
+	}
+	else {
+		for (var i = 0; i < mainContactEl.length; i++) {
+			mainContactEl[i].attachEvent('onclick', toggleAccordion);
+		}
+
+		searchInputEl.attachEvent('onchange', searchContacts);
 	}
 
-	searchInputEl.addEventListener('input', searchContacts);
 
 	function searchContacts() {
 		var filterValue = searchInputEl.value.toUpperCase();
