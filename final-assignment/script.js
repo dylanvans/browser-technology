@@ -1,8 +1,7 @@
-(function () {
+function init(){
 	var searchInputEl = document.getElementsByClassName('search-input')[0];
 	var contactEl = document.getElementsByClassName('contact-item');
 	var mainContactEl = document.getElementsByClassName('contact-main-info');
-	
 
 	// source: https://stackoverflow.com/questions/2790001/fixing-javascript-array-functions-in-internet-explorer-indexof-foreach-etc
 	if (!('indexOf' in Array.prototype)) {
@@ -23,8 +22,7 @@
 		}
 
 		searchInputEl.addEventListener('input', searchContacts);
-	}
-	else {
+	} else {
 		for (var i = 0; i < mainContactEl.length; i++) {
 			mainContactEl[i].attachEvent('onclick', toggleAccordion);
 		}
@@ -58,4 +56,6 @@
         }
 
 	}
-})();
+}
+
+init();
