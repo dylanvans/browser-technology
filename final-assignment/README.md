@@ -1,4 +1,4 @@
-# Browser Technologies - final assignment
+# Final Assignment - Contact List
 ## Use case
 > I want to be able to search my contact list, and I want to see details of the contacts
 
@@ -29,20 +29,25 @@ At first, the user must always be able to view the details of the contacts. Othe
 		}
 ```
 
+#### Screenshot of search (device: moto-something)
 ![screenshot of demo - Enhanced functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/screenshot-moto.png)
 
 - A collapse and expand animation when the contact is clicked.
 - Sticky letter labels. So the user can see which letter he is scrolling through. When `position: sticky` is not supported it falls back to `position: static`.
 
+#### Screenshot of sticky letter label
 ![screenshot of demo - Enhanced functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/screenshot-sticky.png)
 
+#### Browser support `position: sticky`
 ![screenshot of browser support sticky - Enhanced functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/browser-sticky.png)
 
 ### Extra functionality
-- Via the Geolocation API we can show the user which contacts are nearby.
+- With the Geolocation API we can show the user which contacts are nearby.
 
+#### Screenshot of nearby contacts
 ![screenshot of demo - extra functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/screenshot-nearby.png)
 
+#### Browser support geolocation
 ![screenshot of browser support geolocation - Extra functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/browser-geolocation.png)
 
 ## Conclusion
