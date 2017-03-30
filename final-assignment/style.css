@@ -6,6 +6,10 @@ body {
 	color: #293241;
 }
 
+h1 {
+	margin: 2rem;
+  }
+
 .container-contact-list {
 	box-sizing: border-box;
 	background-color: #293241;
@@ -55,6 +59,12 @@ input {
 .contact-item {
 	box-shadow: 0 5px 5px -4px #A7A7A7;
 	transition: height .3s ease-out;
+}
+
+.container-contact-name {
+	display: flex;
+	align-items: center;
+    flex-direction: row;
 }
 
 .contact-main-info {

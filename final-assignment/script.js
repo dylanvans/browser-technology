@@ -50,11 +50,15 @@
 
 		function toggleAccordion() {
 	        for (i = 0; i < contactEl.length; i++) {
-	            contactEl[i].className = 'contact-item  acc-inactive';
+	        	if(!(contactEl[i] == this.parentNode)) {
+	        		contactEl[i].className = 'contact-item  acc-inactive';    
+	        	}
 	        }
 
 	        if (this.parentNode.className == 'contact-item  acc-inactive') {
 	            this.parentNode.className = 'contact-item  acc-active';
+	        } else {
+	        	this.parentNode.className = 'contact-item  acc-inactive';
 	        }
 		}
 
