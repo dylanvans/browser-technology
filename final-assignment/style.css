@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
-	font-family: helvetica, sans-serif;
+	font-family: 'Montserrat', helvetica, sans-serif;
 	margin: 0;
 	color: #293241;
 }
@@ -7,6 +9,8 @@ body {
 .container-contact-list {
 	box-sizing: border-box;
 	background-color: #293241;
+	margin: 2em;
+	box-shadow: 0 4px 10px 2px #A7A7A7;
 }
 
 .container-search-input {
@@ -49,7 +53,8 @@ input {
 }
 
 .contact-item {
-	border-bottom: 1px solid #A7A7A7;
+	box-shadow: 0 5px 5px -4px #A7A7A7;
+	transition: height .3s ease-out;
 }
 
 .contact-main-info {
