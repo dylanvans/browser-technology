@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Final assignment - Browser Technologies</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -12,10 +13,13 @@
 			<input class="search-input" id="search-input" type="text" placeholder="Name">
 		</div>
 		<ul class="contact-list">
+			<li class="contact-indicator contact-nearby">
+				Nearby
+			</li>
 			<li class="contact-indicator">
 				A
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Angelita Knowles">
 				<div class="contact-main-info">
 					<p class="contact-name">Angelita Knowles</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -23,9 +27,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> angelita.knowles@imageflow.info</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.632381" data-lon="4.753375"><span>Location:</span> Alkmaar</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Araceli Mays">
 				<div class="contact-main-info">
 					<p class="contact-name">Araceli Mays</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -33,9 +38,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> araceli.mays@zillatide.com</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="53.219383" data-lon="6.566502"><span>Location:</span> Groningen</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Alexis Diaz">
 				<div class="contact-main-info">
 					<p class="contact-name">Alexis Diaz</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -43,9 +49,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> alexis.diaz@steelfab.co.uk</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="53.201233" data-lon="5.799913"><span>Location:</span> Leeuwarden</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Anderson Yang">
 				<div class="contact-main-info">
 					<p class="contact-name">Anderson Yang</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -53,9 +60,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> anderson.yang@motovate.tv</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.350785" data-lon="5.264702"><span>Location:</span> Almere</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Andre Guthrie">
 				<div class="contact-main-info">
 					<p class="contact-name">Andre Guthrie</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -63,12 +71,13 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> andre.guthrie@skybold.net</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="51.571915" data-lon="4.768323"><span>Location:</span> Breda</p>
 				</div>
 			</li>
 			<li class="contact-indicator">
 				B
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Bowman England">
 				<div class="contact-main-info">
 					<p class="contact-name">Bowman England</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -76,9 +85,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> bowman.england@acium.me</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.311421" data-lon="4.870087"><span>Location:</span> Amstelveen</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Bo Kane">
 				<div class="contact-main-info">
 					<p class="contact-name">Bo Kane</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -86,9 +96,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> bo.kane@idealis.co.uk</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.442040" data-lon="4.829199"><span>Location:</span> Zaandam</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Bas Daniel">
 				<div class="contact-main-info">
 					<p class="contact-name">Bas Daniel</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -96,12 +107,13 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> bas.daniel@idealis.co.uk</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.090737" data-lon="5.121420"><span>Location:</span> Utrecht</p>
 				</div>
 			</li>
 			<li class="contact-indicator">
 				C
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Carly Mckay">
 				<div class="contact-main-info">
 					<p class="contact-name">Carly Mckay</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -109,9 +121,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> carly.mckay@fuelton.us</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.221537" data-lon="6.893662"><span>Location:</span> Enschede</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Corine Underwood">
 				<div class="contact-main-info">
 					<p class="contact-name">Corine Underwood</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -119,9 +132,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> corine.underwood@fuelton.us</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.370216" data-lon="4.895168"><span>Location:</span> Amsterdam</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Charmaine Gallegos">
 				<div class="contact-main-info">
 					<p class="contact-name">Charmaine Gallegos</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -129,9 +143,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> charmaine.gallegos@prosely.ca</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="51.924420" data-lon="4.477733"><span>Location:</span> Rotterdam</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Christensen Pope">
 				<div class="contact-main-info">
 					<p class="contact-name">Christensen Pope</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -139,12 +154,13 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> christensen.pope@utara.ca</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="51.441642" data-lon="5.469722"><span>Location:</span> Eindhoven</p>
 				</div>
 			</li>
 			<li class="contact-indicator">
 				D
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Dawson Mcdaniel">
 				<div class="contact-main-info">
 					<p class="contact-name">Dawson Mcdaniel</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -152,9 +168,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> dawson.mcdaniel@visalia.info</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.306085" data-lon="4.690704"><span>Location:</span> Hoofddorp</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Deidre Boone">
 				<div class="contact-main-info">
 					<p class="contact-name">Deidre Boone</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -162,9 +179,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> deidre.boone@atgen.us</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="52.308051" data-lon="5.040622"><span>Location:</span> Weesp</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Delores Bruce">
 				<div class="contact-main-info">
 					<p class="contact-name">Delores Bruce</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -172,9 +190,10 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> delores.bruce@xanide.co.uk</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="50.851368" data-lon="5.690973"><span>Location:</span> Maastricht</p>
 				</div>
 			</li>
-			<li class="contact-item acc-inactive">
+			<li class="contact-item acc-inactive" data-name="Dickerson Cooper">
 				<div class="contact-main-info">
 					<p class="contact-name">Dickerson Cooper</p>
 					<img src="assets/icon-down.png" class="icon-down" alt="">
@@ -182,6 +201,7 @@
 				<div class="contact-extra-info acc-extra">
 					<p class="contact-email"><span>Email:</span> dickerson.cooper@digigene.me</p>
 					<p class="contact-tel"><span>Tel:</span> 0638296743</p>
+					<p class="contact-location" data-lat="51.507351" data-lon="-0.127758"><span>Location:</span> London</p>
 				</div>
 			</li>
 		</ul>

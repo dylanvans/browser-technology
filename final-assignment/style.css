@@ -72,6 +72,10 @@ input {
 	transition: transform .3s ease-out;
 }
 
+.contact-nearby {
+	display: none;
+}
+
 .acc-active .icon-down {
 	transform: rotate(180deg);
 }
@@ -94,7 +98,7 @@ input {
 	will-change: transform;
 	overflow: hidden;
 	transform-origin: top;
-	transition: transform .3s ease-out, opacity .6s ease-out;
+	transition: transform .3s ease-out, opacity .3s ease-out;
 }
 
 .acc-inactive .acc-extra {
