@@ -92,12 +92,12 @@
 			}
 
 			function getLocationContacts() {
-				contactItemEl.forEach(function(el) {
-					var name = el.getAttribute('data-name');
-					var lat = el.querySelector('.contact-location').getAttribute('data-lat');
-					var lon = el.querySelector('.contact-location').getAttribute('data-lon');
+				for (var i = 0; i < contactItemEl.length; i++) {
+					var name = contactItemEl[i].getAttribute('data-name');
+					var lat = contactItemEl[i].querySelector('.contact-location').getAttribute('data-lat');
+					var lon = contactItemEl[i].querySelector('.contact-location').getAttribute('data-lon');
 					contactLocationArray.push([name, lat, lon])
-				});
+				}
 
 				return contactLocationArray;
 			}
@@ -120,13 +120,13 @@
 				var nearbyContainer = document.querySelector('.contact-nearby');
 				nearbyContainer.style.display = 'block';
 
-				contactItemEl.forEach(function(el){
-					var name = el.getAttribute('data-name');
+				for (var i = 0; i < contactItemEl.length; i++) {
+					var name = contactItemEl[i].getAttribute('data-name');
 					if(closest.indexOf(name) > -1) {
-						nearbyContainer.insertAdjacentHTML('afterend', el.outerHTML);
+						nearbyContainer.insertAdjacentHTML('afterend', contactItemEl[i].outerHTML);
 						addEventContacts();
 					}
-				})
+				}
 			}
 		}
 	}
