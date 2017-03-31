@@ -50,6 +50,15 @@ At first, the user must always be able to view the details of the contacts. Othe
 #### Browser support geolocation
 ![screenshot of browser support geolocation - Extra functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/browser-geolocation.png)
 
+## Accessibility 
+### Color
+With Sim Daltonism I simulated how a colorblind person would see the demo. I looked if there were contrasts that would cause problems, but fortunately there weren't any.
+
+#### Deuteranopia
+![screenshot of demo - extra functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/screenshot-deuteranopia.png)
+#### Protanopia
+![screenshot of demo - extra functionality](https://github.com/dylanvans/browser-technology/blob/master/final-assignment/readme-img/screenshot-protanopia.png)
+
 ## Conclusion
 My goal was to get the core functionality working up to IE8, but unfortunately the javascript isn't working yet. The full demo works fine on IE9, even the nearby contacts feature is not a problem. The same goes for mobile use of the demo.
 
