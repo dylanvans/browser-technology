@@ -4,7 +4,6 @@
 		var contactEl = document.getElementsByClassName('contact-item');
 		var mainContactEl = document.getElementsByClassName('contact-main-info');
 
-
 		addEventContacts();
 		nearbyContacts();
 
@@ -51,15 +50,23 @@
 		function toggleAccordion() {
 	        for (i = 0; i < contactEl.length; i++) {
 	        	if(!(contactEl[i] == this.parentNode)) {
-	        		contactEl[i].className = 'contact-item  acc-inactive';    
+	        		hideElement(contactEl[i]);    
 	        	}
 	        }
 
 	        if (this.parentNode.className == 'contact-item  acc-inactive') {
-	            this.parentNode.className = 'contact-item  acc-active';
+	        	showElement(this.parentNode)
 	        } else {
-	        	this.parentNode.className = 'contact-item  acc-inactive';
+	        	hideElement(this.parentNode);
 	        }
+		}
+
+		function hideElement(el) {
+			el.className = 'contact-item  acc-inactive';
+		}
+
+		function showElement(el) {
+			el.className = 'contact-item  acc-active';
 		}
 
 		function nearbyContacts() {

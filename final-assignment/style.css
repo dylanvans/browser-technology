@@ -40,6 +40,8 @@ input {
 }
 
 .contact-indicator {
+	font-size: 1em;
+	margin: 0;
 	z-index: 1;
 	position: -webkit-sticky;
 	position: sticky;
@@ -123,9 +125,14 @@ input {
 	padding: 0;
 }
 
-.acc-active .acc-extra {
+.acc-active .acc-extra, .acc-inactive:focus .acc-extra {
 	opacity: 1;
 	transform: scaleY(1);
 	min-height: auto;
+	max-height: 100%;
 	padding: .5em 1em;
+}
+
+.acc-inactive:focus {
+	outline: 0;
 }
