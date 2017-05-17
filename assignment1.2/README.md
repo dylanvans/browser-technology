@@ -3,12 +3,12 @@ For this assignment I will test my final project of Web App From Scratch on usab
 
 The app gets articles from The Guardian API and analyses them through the Watson AlchemyLanguage API.
 
-![screenshot app]()
+![screenshot app](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-app.png?raw=true)
 
 ### Images
 Disabled Images to see what happens when images aren't loaded:
-![screenshot images]()
-![screenshot images2]()
+![screenshot images](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-images.png?raw=true)
+![screenshot images2](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-images2.png?raw=true)
 The grid of the articles falls apart and is not usable anymore.
 
 #### Solution
@@ -43,27 +43,27 @@ body {
 
 ### Javascript
 When I disabled Javascript I could only see the homepage of the app. Because the whole app is client side, nothing will work without Javascript. No routing, no requests, no app.
-![screenshot images2]()
+![screenshot javascript](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-javascript.png?raw=true)
 
 #### Solution
 Instead of making a SPA on the client side, we could render all the pages server side. This way the client doesn't need any Javascript, they simple make an http request to the server and get there HTML. This way the app is still usable without Javascript.
 
 ### Color
 ##### Deuteranopia
-![screenshot color deut]()
+![screenshot color deut](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-deut.png?raw=true)
 
 ##### Protanopia
-![screenshot color prot]()
+![screenshot color prot](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-prot.png?raw=true)
 
 ##### Tritanopia
-![screenshot color trit]()
+![screenshot color trit](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-trit.png?raw=true)
 
 The contrast in all color combinations is high enough for color blind people. I used Sim Daltonism to check multiple kinds of color blindness, and there were no conflicts.
 
 ### Slow Connection
 I tried to use my app while throttling the internet connection to 'Regular 2G (300ms, 250kb/s, 50kb/s)'. The app was, of course, very slow, but still usable. The console gave a warning about the custom font that could not be loaded. Therefore, the fallback font was used till the custom font was fully loaded.
 
-![screenshot internet]()
+![screenshot internet](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-internet.png?raw=true)
 
 
 ### Cookies
