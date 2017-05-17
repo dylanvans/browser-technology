@@ -91,17 +91,17 @@ I used browserstack to test my app on multiple devices and multiple browsers. Th
 
 #### Motorola G - Chrome
 The app worked just fine on the Motorola G on Chrome. You can navigate through all the categories and even the filter function works. But when I wanted to go to a detail page, but the app didn't show me any. The Javascript broke on a request to the watson API and I had no error handling build in. So the whole app crashed.
-![screenshot moto](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-trit.png?raw=true)
+![screenshot moto](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-moto.png?raw=true)
 
-![screenshot moto2](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-trit.png?raw=true)
+![screenshot moto2](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-moto2.png?raw=true)
 #### Galaxy Tab 4 - Firefox
 Testing on the Galaxy Tab 4 was not better than the Motorola G. The images didn't load well. And I had the same problem with the detail page as with the Motorola G.
-![screenshot galaxy](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-trit.png?raw=true)
+![screenshot galaxy](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-galaxy.png?raw=true)
 
-![screenshot galaxy2](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-trit.png?raw=true)
+![screenshot galaxy2](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-moto2.png?raw=true)
 #### Windows - IE9
 And finally I tested the app on Windows IE9 to see my app totally fall apart. The home page loaded and that was it. Navigating through the pages was not an option, because the Javascript broke on the routing and my app was useless.
-![screenshot ie9](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/color-trit.png?raw=true)
+![screenshot ie9](https://github.com/dylanvans/browser-technology/blob/master/assignment1.2/md-img/screenshot-ie.png?raw=true)
 
 #### Solution
 To prevent this problems to occur in the future you have to do more feature detection in your code. If you use a technique you have to check if the clients browser is supporting this technique, otherwise the app will crash and is no longer usable for the user. Also, you have to do more error handling in your code. If you make a request to an API it is possible you receive an error. If you have not taken it into account, the app will also crash. And the third important lesson I learnt from testing my app is: you always have to test your app on multiple devices multiple times in your proces.   
